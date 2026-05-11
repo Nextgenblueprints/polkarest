@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polka Restaurant | Luxury Dining</title>
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Import Playfair Display for elegant headings, and Inter for clean body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="video-container">
+            <video autoplay muted playsinline class="hero-video active" id="hero-video-0">
+                <source src="new_hero_0.mp4" type="video/mp4">
+            </video>
+            <video muted playsinline class="hero-video" id="hero-video-1">
+                <source src="new_hero.mp4" type="video/mp4">
+            </video>
+            <video muted playsinline class="hero-video" id="hero-video-2">
+                <source src="new_hero_2.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="curved-logo-container">
+                <div id="top-title" class="curved-text top-half">POLKA RESTAURANT</div>
+                <div id="bottom-title" class="curved-text bottom-half">Bhopal &bull; +91 73544 62231</div>
+            </div>
+            <div class="hero-subtitle" style="display: none;">Bhopal &middot; India</div>
+        </div>
+        <div class="scroll-indicator fade-in-delayed">
+            <span>Scroll to Discover</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pirates of Grill Inspired Location Section -->
+    <section class="location-section" id="overview">
+        <h2 class="location-header-main fade-in">Bhopal</h2>
+        
+        <div class="location-grid-pirates">
+            <!-- Address Column -->
+            <div class="location-column fade-in-up">
+                <div class="location-col-header">
+                    <span class="location-col-title">Address</span>
+                </div>
+                <div class="location-col-content">
+                    LIG 25, A-Portion, Old Subhash Nagar,<br>
+                    Opposite Gurudwara, MP Nagar,<br>
+                    Bhopal - 462011
+                </div>
+            </div>
+            
+            <!-- Phone Column -->
+            <div class="location-column fade-in-up">
+                <div class="location-col-header">
+                    <span class="location-col-title">Phone number</span>
+                </div>
+                <div class="location-col-content">
+                    +91 73544 62231 / 32<br>
+                    reservations@polka.com
+                </div>
+            </div>
+            
+            <!-- Opening Hours Column -->
+            <div class="location-column fade-in-up">
+                <div class="location-col-header">
+                    <span class="location-col-title">Opening hours</span>
+                </div>
+                <div class="location-col-content">
+                    Lunch: 12:00 Noon to 3:30 pm<br>
+                    Dinner: 6:30 pm to 10:30 pm
+                </div>
+            </div>
+        </div>
+
+        <!-- Full Width Map -->
+        <div class="map-container-full fade-in">
+            <iframe 
+                src="https://www.google.com/maps?q=LIG+25+A-Portion+Old+Subhash+Nagar+Bhopal&output=embed" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Menu Section: Amrit Palace Inspired Structure -->
+    <main class="menu-section" id="menu">
+        <div class="menu-container">
+            <div class="menu-header fade-in">
+                <h2 class="section-title">Our Menu</h2>
+                <div class="divider">
+                    <span>&#10022;</span>
+                </div>
+                <p class="section-subtitle">A culinary journey through exquisite flavors.</p>
+                <button id="addItemBtn" class="add-item-button" style="display: none;">Add Menu Item</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Column 1 -->
+                <div class="menu-column">
+                    <!-- Menu Category 0: Thalis -->
+                    <div class="menu-category fade-in">
+                        <h3 class="category-title">Traditional Thalis</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Mini Thali</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;100</span>
+                                </div>
+                                <p class="item-desc">4 butter tawa roti, seasonal veg, rice, dal, achar, salad.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Mid Thali</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;120</span>
+                                </div>
+                                <p class="item-desc">6 butter tawa roti, seasonal veg, rice, dal fry, salad, achaar.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Regular Thali</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;140</span>
+                                </div>
+                                <p class="item-desc">6 butter tawa roti, seasonal veg, rice, dal fry, raita, achaar, salad.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Category 2: North Indian -->
+                    <div class="menu-category fade-in">
+                        <h3 class="category-title">Heritage North Indian</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Paneer Butter Masala</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;240</span>
+                                </div>
+                                <p class="item-desc">Rich and creamy tomato-based gravy with soft cottage cheese chunks.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Dal Fry</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;160</span>
+                                </div>
+                                <p class="item-desc">Yellow lentils tempered with cumin, garlic, and red chilies.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Sev Tamatar</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;170</span>
+                                </div>
+                                <p class="item-desc">A spicy and tangy Malwa specialty made with tomatoes and crispy sev.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Dal Tadka</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;160</span>
+                                </div>
+                                <p class="item-desc">Yellow lentils tempered with fried spices, garlic, and red chilies.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Masala Moongdal Khichdi</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;150</span>
+                                </div>
+                                <p class="item-desc">Comforting rice and lentil porridge with mild spices and ghee.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Onion Paratha</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;50</span>
+                                </div>
+                                <p class="item-desc">Whole wheat flatbread stuffed with spiced onions and coriander.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Methi Paratha</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;80</span>
+                                </div>
+                                <p class="item-desc">Healthy flatbread made with fresh fenugreek leaves and spices.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Category 6: Desserts -->
+                    <div class="menu-category fade-in">
+                        <h3 class="category-title">Desserts & Sweets</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Gulab Jamun (2 Pcs)</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;60</span>
+                                </div>
+                                <p class="item-desc">Soft, warm milk dumplings soaked in fragrant cardamom sugar syrup.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Special Meetha Daliya</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;80</span>
+                                </div>
+                                <p class="item-desc">Sweet and nutritious house-special broken wheat porridge.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="menu-column">
+                    <!-- Menu Category 1: Street Food -->
+                    <div class="menu-category fade-in">
+                        <h3 class="category-title">Signature Street Food</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Chole Bhature</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;80</span>
+                                </div>
+                                <p class="item-desc">Fluffy bhature served with spicy chickpea curry and onions.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Chole Chawal</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;120</span>
+                                </div>
+                                <p class="item-desc">Classic street-style chickpeas served with fragrant steamed rice.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Rajma Chawal</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;120</span>
+                                </div>
+                                <p class="item-desc">Hearty red kidney bean curry served with steamed rice.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Cream Sandwich</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;70</span>
+                                </div>
+                                <p class="item-desc">Fresh bread with creamy vegetable filling, a perfect light snack.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Category 3: Chinese -->
+                    <div class="menu-category fade-in">
+                        <h3 class="category-title">Wok-Fired Chinese</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Veg Fried Rice</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;120</span>
+                                </div>
+                                <p class="item-desc">Stir-fried rice with crunchy vegetables and oriental sauces.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Veg Hakka Noodles</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;140</span>
+                                </div>
+                                <p class="item-desc">Classic stir-fried noodles with crisp vegetables.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Veg Schezwan Noodles</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;140</span>
+                                </div>
+                                <p class="item-desc">Spicy noodles tossed in fiery Schezwan sauce and veggies.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Dry Manchurian</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;140</span>
+                                </div>
+                                <p class="item-desc">Vegetable dumplings in a spicy ginger-garlic sauce.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Category 4: Breads & Sides -->
+                    <div class="menu-category fade-in">
+                        <h3 class="category-title">Breads & Sides</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Butter Naan</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;60</span>
+                                </div>
+                                <p class="item-desc">Soft, leavened clay oven bread brushed with fresh butter.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Jeera Rice</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;120</span>
+                                </div>
+                                <p class="item-desc">Fragrant basmati rice tempered with cumin seeds.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Matar Pulao</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;150</span>
+                                </div>
+                                <p class="item-desc">Fragrant rice cooked with green peas and aromatic whole spices.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Veg Biryani</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;180</span>
+                                </div>
+                                <p class="item-desc">Fragrant basmati rice cooked with garden vegetables and aromatic spices.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Mixed Veg Raita</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;60</span>
+                                </div>
+                                <p class="item-desc">Cooling yogurt with chopped onions, tomatoes, and cucumbers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu Category 5: Beverages -->
+                    <div class="menu-category fade-in">
+                        <h3 class="category-title">Beverages & Refreshments</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Special Masala Tea</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;30</span>
+                                </div>
+                                <p class="item-desc">Aromatic tea brewed with fresh ginger, cardamom, and secret spices.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Hand-Beaten Coffee</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;60</span>
+                                </div>
+                                <p class="item-desc">Rich, frothy coffee made with whole milk for a classic taste.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4 class="item-name">Sweet / Salted Lassi</h4>
+                                    <span class="item-dots"></span>
+                                    <span class="item-price">&#8377;70</span>
+                                </div>
+                                <p class="item-desc">Traditional churned yogurt drink, served chilled in a glass.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Add Menu Item Modal -->
+    <div id="addItemModal" class="modal hidden" style="display: none;">
+        <div class="modal-backdrop"></div>
+        <div class="modal-dialog">
+            <h3 class="modal-title">Add New Menu Item</h3>
+            <form id="addItemForm" class="modal-form">
+                <label for="item-category">Category</label>
+                <select id="item-category" required>
+                    <option value="Traditional Thalis">Traditional Thalis</option>
+                    <option value="Signature Street Food">Signature Street Food</option>
+                    <option value="Heritage North Indian">Heritage North Indian</option>
+                    <option value="Wok-Fired Chinese">Wok-Fired Chinese</option>
+                    <option value="Breads & Sides">Breads & Sides</option>
+                    <option value="Beverages & Refreshments">Beverages & Refreshments</option>
+                    <option value="Desserts & Sweets">Desserts & Sweets</option>
+                </select>
+                <label for="item-name">Name</label>
+                <input type="text" id="item-name" required />
+                <label for="item-price">Price (₹)</label>
+                <input type="number" id="item-price" required />
+                <label for="item-desc">Description</label>
+                <textarea id="item-desc" rows="3" required></textarea>
+                <div class="modal-actions">
+                    <button type="submit" id="save-item-btn" class="modal-save">Save</button>
+                    <button type="button" id="cancel-item-btn" class="modal-cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Polka Restaurant. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
