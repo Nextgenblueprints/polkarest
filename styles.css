@@ -835,4 +835,41 @@ body {
     background: var(--accent-gold-hover);
     transform: translateY(-2px);
 }
+/* Location Section */
+.location-section {
+    padding: 8rem 2rem;
+    background-color: #0a0a0a;
+}
 
+.map-container {
+    max-width: 1200px;
+    margin: 4rem auto 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    line-height: 0;
+}
+
+.map-container iframe {
+    filter: grayscale(1) invert(0.9) contrast(1.2);
+    transition: var(--transition-smooth);
+}
+
+.map-container:hover iframe {
+    filter: grayscale(0) invert(0) contrast(1);
+}
+
+.address-details p {
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .location-section {
+        padding: 4rem 1rem;
+    }
+    
+    .map-container {
+        margin-top: 2rem;
+    }
+}
