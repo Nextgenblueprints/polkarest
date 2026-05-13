@@ -197,17 +197,16 @@ body {
 }
 
 .top-half .char {
-    font-family: 'Great Vibes', cursive;
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
-    font-weight: 400;
+    font-family: var(--font-body);
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    font-weight: 200;
     letter-spacing: 0.5em;
-    text-transform: none;
+    text-transform: uppercase;
     color: var(--text-light);
-    margin-right: 0.3em;
-    width: 40px;
-    margin-left: -20px;
+    margin-right: -0.5em;
+    width: 30px;
+    margin-left: -15px;
 }
-
 .bottom-half .char {
     font-family: var(--font-heading);
     font-size: clamp(0.7rem, 1.2vw, 1rem);
