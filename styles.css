@@ -197,13 +197,13 @@ body {
 }
 
 .top-half .char {
-    font-family: var(--font-body);
-    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
-    font-weight: 200;
-    letter-spacing: 0.5em;
-    text-transform: uppercase;
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: none;
     color: var(--text-light);
-    margin-right: -0.5em;
+    margin-right: -0.2em;
 }
 
 .bottom-half .char {
